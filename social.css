@@ -1,0 +1,231 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(b.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.box {
+
+    width: 850px;
+    height: 500px;
+    background-color: #03035f80;
+    border-radius: 10px;
+    border-top: 2px solid #ffffff80 ;
+    border-left: 2px solid #ffffff80 ;
+    position: relative;
+    z-index: -1000;
+}
+
+.facebook {
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: #020087;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.facebook .c::after {
+
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 180px;
+    height: 180px;
+    background: url(facebook.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid blue;
+    z-index: 10000;
+}
+
+.facebook .x {
+    position: relative;
+    top: 2px;
+    right:  2px;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(#0059ff, #ff00c8);
+    border-radius: 50%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.instagram {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: #020087;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.instagram .c::after {
+
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    
+    width: 180px;
+    height: 180px;
+    background: url(instgram.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid blue;
+    z-index: 10000;
+} 
+
+.instagram .x {
+    position: relative;
+    top: 2px;
+    left:  2px;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(#0059ff, #ff00c8);
+    border-radius: 50%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.twitter {
+    position: absolute;
+    bottom: 20px;
+    left: 300px;
+    width: calc(125px*2);
+    height: calc(25%*2);
+    background-color: #020087;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+i {
+    
+    width: 100px;
+    height: 500px;
+    background: linear-gradient( #0066ff ,  #ff00aa );
+    animation: animate 2s ease-in-out infinite;
+    z-index: 99;
+}
+
+@keyframes animate {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.c {
+
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    background-color: #020064;
+    border-radius: 50%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter .c::after {
+
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 180px;
+    height: 180px;
+    background: url(twitter.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 2px solid blue;
+    z-index: 10000;
+    cursor: pointer;
+} 
+
+.twitter .x {
+    position: relative;
+    top: 2px;
+    left:  2px;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(#0059ff, #ff00c8);
+    border-radius: 50%;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.x:hover {
+    opacity: 1;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
